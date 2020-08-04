@@ -1,0 +1,51 @@
+Any Boolean Function f(x,y,z...) can be expressed with three Boolean Operators AND, NOT and OR.
+
+The number of boolean functions that can be defined over 'n' variables is 2^(2^n) 
+
+i.e. for n = 2, we can have 2^(2^2) = 16 functions . Here is a table for that:
+
+function-16		 |		x, y
+----------------------------------
+constant 0				0
+And						x.y
+x and not y				x.~y
+x						x
+not x and y				~x.y
+y						y
+Xor						x.~y + ~x.y
+or						x + y
+Nor						~(x+y)
+equivalence				x.y + ~x.~y
+not y					~y
+not x					~x
+if y then x				x + ~y
+if x then y				y + ~x
+Nand					~(x.y)
+constant 1				1
+
+Nand fn can implement any of the AND, OR or NOT operators:
+AND = (x NAND y) NAND (x NAND y)
+NOT = (x NAND x)
+OR  = (x NAND x) NAND (y NAND y)
+
+Functions and Gates:
+
+Given a boolean function f() and n input variables x1,x2,...xn and 
+m output variables o1,o2,....om.
+the gate logic of the function would implement: f(x1,x2...xn) = {o1,o2,...,om}
+such that we have m possible outputs from the gate logic.
+
+The hardware to implement this boolean strucuture could be anything that is capable 
+of computing such functions: eg. electronic computers made of silicon that run on
+electricity, an intricate system of tubes and valves or even biological systems.
+
+Composition of Primitive Gates allows us to model boolean functions and hence 
+boolean circuits using logic gates such as NAND gates. 
+
+As we build up more complex functions, these can themselves be viewed as abstract 
+patterns that could be used in other even more complex functions. This allows 
+abstractions and that is the key to taming complexity. 
+
+An abstraction is a generalized pattern that has the power to be applicable in many
+situations, hence relieving the designer of knowing its exact details when building 
+on top of it. All we care for is the correct interface or the API.
