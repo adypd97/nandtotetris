@@ -1,0 +1,15 @@
+/**
+ * Or gate: 
+	
+ */
+
+CHIP Or {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+	Nand(a=a, b=a, out=or1);
+	Nand(a=b, b=b, out=or2);
+	Nand(a=or1, b=or2, out=out);
+
+}

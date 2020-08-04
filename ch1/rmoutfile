@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# remove .out files
+
+rm ./*.out
+echo "Removed .out files"
