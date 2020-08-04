@@ -1,2 +1,7 @@
 Xor.hdl has an error: SOLVED: don't use '_' in naming pins in HDL
+Mux4Way16.hdl had an error: SOLVED: in HDL the i'th index in from the end: i.e.
+									say, we have sel=01
+									then,
+										ss[0] = 1
+										ss[1] = 0
 
