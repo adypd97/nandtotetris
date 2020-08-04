@@ -5,3 +5,5 @@ Mux4Way16.hdl had an error: SOLVED: in HDL the i'th index in from the end: i.e.
 										ss[0] = 1
 										ss[1] = 0
 
+Questions:
+		How would you make a Mux or a DMux with NOT and AND and OR gates (universal gates)?
