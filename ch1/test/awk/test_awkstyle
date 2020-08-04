@@ -1,0 +1,4 @@
+#!/bin/awk -f
+BEGIN {print "File Owner is dead"}
+{print "$******:<<<*****$" }
+END {print "- DONE - "}

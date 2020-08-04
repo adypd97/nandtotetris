@@ -1,0 +1,4 @@
+Basic Organisation of AWK:
+ pattern { action }
+
+ pattern specified is performed for every line as read by input of AWK.
