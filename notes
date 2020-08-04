@@ -49,3 +49,7 @@ abstractions and that is the key to taming complexity.
 An abstraction is a generalized pattern that has the power to be applicable in many
 situations, hence relieving the designer of knowing its exact details when building 
 on top of it. All we care for is the correct interface or the API.
+
+The implementation is independent of the abstraction or the interface.
+Implementation determines non-functional properties like speed, cost, efficiency
+simplicity, usability etc.

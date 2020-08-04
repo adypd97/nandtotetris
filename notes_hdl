@@ -1,0 +1,10 @@
+A HDL overview:
+Two parts:
+1. HEADER: describes the name of chip and its interface(I/O)
+2. PARTS : defines the topology of all the other chips and how they manipulate
+           I/O to get the chip in HEADER.
+
+		   Statements: describe the lower-level chip and how they connect to 
+		   other parts. Internal and external pins together describe the connecti
+		   vity of the design for the chip.
+
